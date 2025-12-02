@@ -1,43 +1,47 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Compiled output
+# compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
 
-# Node
+# dependencies
 /node_modules
-npm-debug.log
-yarn-error.log
+
+# profiling files
+chrome-profiler-events.json
 
 # IDEs and editors
-.idea/
+/.idea
 .project
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
-
-# Visual Studio Code
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+!.vscode/launch.json
+!.vscode/tasks.json
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
+# System Files
+.DS_Store
+Thumbs.db
+
+# Misc
+/.angular/
+/.sass-cache/
 /connect.lock
 /coverage
 /libpeerconnection.log
+npm-debug.log
+yarn-error.log
 testem.log
 /typings
-__screenshots__/
 
-# System files
-.DS_Store
-Thumbs.db
+# Environment Variables (PENTING untuk keamanan)
+# Jika kamu ingin repo ini publik, disarankan meng-ignore environment.ts
+# Tapi untuk tugas kuliah (private repo) atau kemudahan setup dosen,
+# baris di bawah ini BOLEH diberi tanda pagar (#) agar environment.ts TEBAWA.
+src/environments/environment.ts
